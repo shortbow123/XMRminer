@@ -1,0 +1,425 @@
+From: <Saved by Blink>
+X-Snapshot-Version: 1.0
+X-Snapshot-Title: =?utf-8?Q?Coinhive Miner?=
+X-Snapshot-Content-Location: https://authedmine.com/media/miner.html?key=SDNvKfd6aZGG7aDdj7nBoOB33yD28KeR
+Subject: Coinhive Miner
+Date: Fri, 18 Jan 2018 22:15:15 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--icw8KFmATN2ANShwKkMyqmDwrp10eKrYBY1NWml9qr----"
+
+------MultipartBoundary--icw8KFmATN2ANShwKkMyqmDwrp10eKrYBY1NWml9qr----
+Content-Type: text/html
+Content-ID: <frame-224-921dccc3-037d-4d6a-935c-b5b53a243720@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://authedmine.com/media/miner.html?key=SDNvKfd6aZGG7aDdj7nBoOB33yD28KeR
+
+<!DOCTYPE html><html lang=3D"en-us"><head><meta http-equiv=3D"Content-Type"=
+ content=3D"text/html; charset=3DUTF-8">
+	<title>Coinhive Miner</title>
+	<meta name=3D"description" content=3D"Coinhive Miner">
+	<link rel=3D"icon" type=3D"image/png" href=3D"https://authedmine.com/media=
+/coinhive-icon.png">
+	<link rel=3D"apple-touch-icon" href=3D"https://authedmine.com/media/coinhi=
+ve-icon.png">
+	<meta name=3D"viewport" content=3D"width=3Ddevice-width">
+	<style>
+		* {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		html, body { overflow: hidden; }
+		body {
+			background: #fff;
+			font-family: sans-serif;
+			line-height: 1.3;
+			color: #555;
+			font-size: 14px;
+			padding: 0;
+			margin: 0 auto;
+			max-width: 300px;
+			position: relative;
+		}
+		.box {
+			float: left;
+			width: 128px;
+			padding: 0 0 8px 8px;
+		}
+		.box.graph {
+			width: 100%;
+			padding: 0 8px 4px 8px;
+		}
+		h2 {
+			text-transform: uppercase;
+			font-weight: normal;
+			font-size: 12pt;
+			margin: 0;
+			padding: 12px 0 2px 0;
+			opacity: 0.8;
+		}
+		span.value {
+			font-size: 16pt;
+		}
+		span.value.fixed-width {
+			width: 2.6em;
+			display: inline-block;
+		}
+		.divide {
+			font-size: 80%; opacity: 0.25;
+		}
+		.action {
+			-webkit-user-select: none;
+		    -moz-user-select: none;
+		    -khtml-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		}
+		a, .action {
+			color: #ff9501;
+			cursor: pointer;
+			text-decoration: none;
+			opacity: 0.75;
+		}
+		a:hover, .action:hover {
+			opacity: 1;
+		}
+		img.icon {
+			width: 16px;
+			height: 16px;
+			vertical-align: middle;
+			margin: 0 0 0 4px;
+		}
+		div.foot {
+			text-align: right;
+			width: 100%;
+			float: left;
+			padding: 0 8px 4px 8px;
+		}
+		#graph-canvas {
+			margin-top: 8px;
+			width: 100%;
+			height: 128px;
+		}
+		#mining-buttons {
+			z-index: 2;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+		#mining-buttons-overlay {
+			z-index: 3;
+			background: #fff;
+			opacity: 0.75;
+			top: 0; left: 0;
+			width: 100%; height: 100%;
+		}
+		.mining-button {
+			z-index: 4;
+		}
+		.mining-button {
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			height: 30px;
+			margin: auto;
+			display: block;
+			text-transform: uppercase;
+			font-size: 120%;
+		}
+		#miner.running #mining-buttons-overlay {
+			display: none;
+		}
+		#miner.running #mining-start {
+			display: none;
+		}
+		#mining-stop {
+			display: none;
+		}
+		#miner.running:hover #mining-buttons {
+			height: 64px;
+			max-width: 256px
+		}
+		#miner.running:hover #mining-buttons-overlay {
+			display: block;
+		}
+		#miner.running:hover #mining-stop {
+			display: block;
+		}
+		.mining-icon {
+			width: 32px;
+			height: 32px;
+			vertical-align: -37%;
+			margin-right: 4px;
+			opacity: 0.75;
+		}
+		.mining-icon .mining-stroke { stroke: #ff9501; }
+		.mining-icon .mining-fill { fill: #ff9501; }
+		.mining-button:hover .mining-icon { opacity: 1; }
+		#miner.stopped .action { color: #aaa; }
+
+		/* Landscape */
+		@media (min-width: 480px) and (max-height: 320px) {
+			body { max-width: 600px; }
+			@media (max-height: 240px) { #graph-canvas {height: 64px;} }
+			@media (max-height: 176px) { #graph-canvas {display: none;} div.foot { t=
+ext-align: left;} }
+		}
+		@media (max-width: 176px) { .powered-by { display: none; } }
+
+		/* Portrait */
+		@media (max-width: 255px) {
+			@media (max-height: 444px) { #graph-canvas {height: 64px;} }
+			@media (max-height: 380px) { #graph-canvas {display: none;} div.foot { t=
+ext-align: left;} }
+		}
+
+		/* Small rect */
+		@media (max-width: 479px) {
+			@media (max-height: 298px) { #graph-canvas {height: 64px;} }
+			@media (max-height: 230px) { #graph-canvas {display: none;} div.foot { t=
+ext-align: left;} }
+			@media (max-height: 140px) { .box.controls {display: none;}}
+		}
+	</style>
+	<style id=3D"extra-styles"></style>
+</head>
+<body id=3D"miner">
+
+<div class=3D"box">
+	<h2>Hashes/s</h2>
+	<span class=3D"value" id=3D"hashes-per-second">0</span>
+</div>
+
+<div class=3D"box">
+	<h2>Total</h2>
+	<span class=3D"value" id=3D"hashes-total">0</span>
+</div>
+
+<div class=3D"box controls">
+	<h2>Threads</h2>
+	<span class=3D"value" id=3D"threads">2</span>
+	<span class=3D"value action" id=3D"threads-add">+</span>
+	<span class=3D"value divide"> / </span>
+	<span class=3D"value action" id=3D"threads-remove">=E2=88=92</span>
+</div>
+
+<div class=3D"box controls">
+	<h2>Speed</h2>
+	<span class=3D"value fixed-width" id=3D"speed">100%</span>
+	<span class=3D"value action" id=3D"speed-up">+</span>
+	<span class=3D"value divide"> / </span>
+	<span class=3D"value action" id=3D"speed-down">=E2=88=92</span>
+</div>
+
+<div class=3D"box graph">
+	<canvas id=3D"graph-canvas"></canvas>
+</div>
+
+<div class=3D"foot" id=3D"branding">
+	<span class=3D"powered-by">powered by</span>
+	<a href=3D"https://coinhive.com/" target=3D"_blank">
+		<img src=3D"https://authedmine.com/media/coinhive-icon.png" class=3D"icon=
+">
+		coinhive
+	</a>
+</div>
+
+<div style=3D"clear: left"></div>
+
+<div id=3D"mining-buttons">
+	<div id=3D"mining-buttons-overlay"></div>
+	<a href=3D"https://authedmine.com/media/miner.html?key=3DSDNvKfd6aZGG7aDdj=
+7nBoOB33yD28KeR#" class=3D"mining-button" id=3D"mining-start">
+		<svg class=3D"mining-icon play-button" viewBox=3D"0 0 200 200" alt=3D"Sta=
+rt Mining">
+			<circle cx=3D"100" cy=3D"100" r=3D"90" fill=3D"none" stroke-width=3D"15"=
+ class=3D"mining-stroke"></circle>
+			<polygon points=3D"70, 55 70, 145 145, 100" class=3D"mining-fill"></poly=
+gon>
+		</svg>
+		<span id=3D"mining-button-text" class=3D"mining-button-text">Start Mining=
+</span>
+	</a>
+	<a href=3D"https://authedmine.com/media/miner.html?key=3DSDNvKfd6aZGG7aDdj=
+7nBoOB33yD28KeR#" class=3D"mining-button" id=3D"mining-stop">
+		<svg class=3D"mining-icon pause-button" viewBox=3D"0 0 200 200" alt=3D"Pa=
+use">
+			<circle cx=3D"100" cy=3D"100" r=3D"90" fill=3D"none" stroke-width=3D"15"=
+ class=3D"mining-stroke"></circle>
+			<rect x=3D"70" y=3D"50" width=3D"20" height=3D"100" class=3D"mining-fill=
+"></rect>
+			<rect x=3D"110" y=3D"50" width=3D"20" height=3D"100" class=3D"mining-fil=
+l"></rect>
+		</svg>
+	</a>
+</div>
+
+
+
+
+
+
+</body></html>
+------MultipartBoundary--icw8KFmATN2ANShwKkMyqmDwrp10eKrYBY1NWml9qr----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://authedmine.com/media/coinhive-icon.png
+
+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
+SUVORK5CYII=
+------MultipartBoundary--icw8KFmATN2ANShwKkMyqmDwrp10eKrYBY1NWml9qr------
