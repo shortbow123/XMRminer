@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "questforacar.gizgames.scratch.mit.edu"
+        versionCode = "010" 
+        version     = "0.1.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Quest For a Car</name>
+    
+     <icon src="/icon.png" />
+
+    <description>
+        You have no car, no home, and your phone counts steps, which some dude trades for cash...
+    </description>
+
+    <author href="http://scratch.mit.edu/users/GizGames" email="GizGames@gmx.com">
+        GizGames
+    </author>
+
+</widget>
