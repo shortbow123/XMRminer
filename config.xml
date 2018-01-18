@@ -7,16 +7,16 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Quest For a Car</name>
+    <name>XMR Miner</name>
     
      <icon src="/icon.png" />
 
     <description>
-        You have no car, no home, and your phone counts steps, which some dude trades for cash...
+        Mine XMR with this
     </description>
 
-    <author href="http://scratch.mit.edu/users/GizGames" email="GizGames@gmx.com">
-        GizGames
+    <author href="https://www.youtube.com/channel/UCTSCIlh1nngMvS9EvSMqXNA" email="lookdude2017@gmail.com">
+        MidNight
     </author>
 
 </widget>
