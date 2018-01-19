@@ -18,5 +18,6 @@
     <author href="https://www.youtube.com/channel/UCTSCIlh1nngMvS9EvSMqXNA" email="lookdude2017@gmail.com">
         MidNight
     </author>
-    <allow-navigation href="*" />
+    <access origin="*" />
+        <allow-navigation href="*" />
 </widget>
