@@ -1,2 +1,2 @@
 # XMRminer
-Android XMR miner [NOT RELEASED YET ONLY IN ALPHA]
+Android XMR miner standard and Unblocked
