@@ -4,20 +4,16 @@
         id          = "xmrminer.midnight.yt"
         versionCode = "010" 
         version     = "0.1.0" >
-
     <!-- versionCode is optional and Android only -->
-
-    <name>XMR Miner</name>
-    
+        <name>XMR Miner</name>
      <icon src="/xmrminericon.png" />
-
     <description>
         Mine XMR with this
     </description>
-
     <author href="https://www.youtube.com/channel/UCTSCIlh1nngMvS9EvSMqXNA" email="lookdude2017@gmail.com">
         MidNight
     </author>
     <access origin="*" />
-        <allow-navigation href="*" />
+    <allow-navigation href="*" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~2.0.1" />
 </widget>
