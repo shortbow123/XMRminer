@@ -20,5 +20,4 @@
     </author>
     <access origin="*" />
     <allow-navigation href="*" />
-    <script type="text/javascript" src="js/Insomnia.js"></script>
 </widget>
