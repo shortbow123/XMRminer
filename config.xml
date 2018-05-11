@@ -9,7 +9,7 @@
         <plugin name="cordova-plugin-insomnia" version="4.1.0" source="npm" />
         
         <name>CryptoMiner</name>
-     <icon src="/xmrminericon.png" />
+     <icon src="/icon.png" />
     <description>
         Mine crypto with this
     </description>
