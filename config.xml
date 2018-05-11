@@ -8,7 +8,7 @@
         <plugin name="cordova-plugin-inappbrowser" spec="~2.0.1" />
         <plugin name="cordova-plugin-insomnia" version="4.1.0" source="npm" />
         
-        <name>CrpytoMiner</name>
+        <name>CryptoMiner</name>
      <icon src="/xmrminericon.png" />
     <description>
         Mine crypto with this
