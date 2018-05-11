@@ -6,8 +6,10 @@
   <meta name="generator" content="2018.0.0.379"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
-	<script type="text/javascript" src="Insomnia.js">
-		function keepAwake()
+	<script type="text/javascript" src="awake.js">
+		function keepAwake(){
+			return "Awake I am"
+		document.getElementById("testVar").innerHTML = window.keepAwake()
 	</script>
   <title>Satoshi</title>
   <!-- CSS -->
@@ -68,5 +70,6 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 </script>
   <!-- RequireJS script -->
   <script src="scripts/require.js?crc=4157109226" type="text/javascript" async data-main="scripts/museconfig.js?crc=4153641093" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
-   </body>
+   <p id="testVar"><p>
+	</body>
 </html>
