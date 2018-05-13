@@ -1,0 +1,9 @@
+Main Page
+Device Status
+Dark and Lite style
+Fullscreen mode
+Battery Saver mode
+Dimmed screen/black screen
+Check current balance
+Debug mode
+Switch Between users
