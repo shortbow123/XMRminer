@@ -7,3 +7,6 @@ When commiting new changes make sure missing/outdated file alert is off. You can
 
 v1.0
 - Released app
+
+v2.0
+- Fixed MinerMojo Settings
