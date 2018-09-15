@@ -9,4 +9,31 @@
       <image:loc>http://cryptominer2.net/images/cm%20icon.png</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>http://cryptominer2.net/satoshi.html</loc>
+    <lastmod>2018-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://cryptominer2.net/images/cm%20icon.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://cryptominer2.net/monero.html</loc>
+    <lastmod>2018-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://cryptominer2.net/images/cm%20icon.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://cryptominer2.net/about.html</loc>
+    <lastmod>2018-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://cryptominer2.net/images/cm%20icon.png</image:loc>
+    </image:image>
+  </url>
 </urlset>

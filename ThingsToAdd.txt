@@ -6,4 +6,4 @@ Battery Saver mode
 Dimmed screen/black screen
 Check current balance
 Debug mode
-Switch Between users
+Switch Between users (use javascript)

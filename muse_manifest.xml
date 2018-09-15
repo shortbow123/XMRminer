@@ -1,22 +1,35 @@
-<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="cryptominer2.net" resolutions="1x" timestamp="1537017720065">
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="cryptominer2.net" resolutions="1x" timestamp="1537033746395">
   <folder name="images">
-    <file name="cm icon.png" crc="326779628" seo="true" ref="index">
+    <file name="cm icon.png" crc="326779628" seo="true" ref="index:satoshi:monero:about">
       <caption webpage="index" alt=""/>
+      <caption webpage="monero" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="satoshi" alt=""/>
     </file>
-    <file name="u111-4.png" crc="431871722" ref="index"/>
-    <file name="u117-4.png" crc="4064460666" ref="index"/>
+    <file name="u111-4.png" crc="500194420" ref="index"/>
+    <file name="u117-4.png" crc="4184986917" ref="index"/>
+    <file name="u136-4.png" crc="4240429841" ref="index"/>
+    <file name="u319-4.png" crc="3930846152" ref="about"/>
+    <file name="u355-4.png" crc="3930846152" ref="satoshi"/>
+    <file name="u346-4.png" crc="3930846152" ref="monero"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="487146994" ref="index"/>
+    <file name="index.css" crc="4165215025" ref="index"/>
+    <file name="satoshi.css" crc="520149669" ref="satoshi"/>
+    <file name="monero.css" crc="18214299" ref="monero"/>
+    <file name="about.css" crc="258675968" ref="about"/>
   </folder>
   <folder name="scripts">
-    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
-    <file name="museutils.js" crc="340535759" ref="index"/>
-    <file name="whatinput.js" crc="86476730" ref="index"/>
-    <file name="museconfig.js" crc="310584261" ref="index"/>
-    <file name="jquery.watch.js" crc="51536988" ref="index"/>
-    <file name="require.js" crc="7928878" ref="index"/>
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:satoshi:monero:about"/>
+    <file name="museutils.js" crc="340535759" ref="index:satoshi:monero:about"/>
+    <file name="whatinput.js" crc="86476730" ref="index:satoshi:monero:about"/>
+    <file name="museconfig.js" crc="310584261" ref="index:satoshi:monero:about"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index:satoshi:monero:about"/>
+    <file name="require.js" crc="7928878" ref="index:satoshi:monero:about"/>
   </folder>
-  <file name="index.html" crc="4127839656" seo="true" mt="1537017709450" redirect="true"/>
+  <file name="index.html" crc="3814004357" seo="true" mt="1537033737943" redirect="true"/>
+  <file name="satoshi.html" crc="425344281" seo="true" mt="1537033006017" redirect="true"/>
+  <file name="monero.html" crc="257423439" seo="true" mt="1537033009269" redirect="true"/>
+  <file name="about.html" crc="10293825" seo="true" mt="1537032606895" redirect="true"/>
 </manifest>
